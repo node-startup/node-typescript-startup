@@ -1,0 +1,23 @@
+{
+  "name": "node-typescript-startup",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "author": "Yokiijay <yokiijay@gmail.com> (https://yokiijay.github.io)",
+  "license": "MIT",
+  "scripts": {
+    "dev": "yarn run nodemon src/index.ts",
+    "build": "yarn run tsc -p .",
+    "start": "node build"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.11.3",
+    "@types/koa__router": "^8.0.2",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "@koa/router": "^9.3.1",
+    "koa": "^2.13.0"
+  }
+}
